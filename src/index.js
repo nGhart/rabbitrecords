@@ -8,10 +8,7 @@ import { persistor, store } from './store/store';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-//axios.defaults.baseURL = 'https://server2-763m.onrender.com';
-axios.defaults.baseURL = 'http://localhost:1995';
-//axios.defaults.baseURL = 'https://test-pwvq.onrender.com/';
-//axios.defaults.baseURL = 'https://recordsserver.onrender.com';
+//axios.defaults.baseURL = 'https://rabbit-records-back.vercel.app/';
 axios.defaults.withCredentials = true;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
