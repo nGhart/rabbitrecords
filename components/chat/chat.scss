@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+.toggle {
+  height: 4rem;
+  width: 4rem;
+  margin: 0;
+  border-radius: 50%;
+  background-color: rgb(5, 24, 53);
+  background-color: $light-bg;
+  background-color: rgb(103, 193, 174);
+  background: linear-gradient(
+    245deg,
+    rgb(59, 139, 122) 47%,
+    rgb(53, 206, 172) 98%
+  );
+  border: 2px solid $deep-bg;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 10;
+}
+.arrow {
+  font-size: 30px;
+  padding: 3px;
+  color: $deep-bg;
+}
+.toggleContainer {
+  height: 0;
+  width: 350px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  z-index: 5;
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  background: $lin-grad;
+}
+
+.showChat {
+  height: 300px;
+}
+.chatbox {
+  min-height: calc(100% - 85px);
+  padding: 15px;
+}
+.response {
+  height: 180px;
+  border-radius: 5px;
+  overflow: auto;
+}
+.goButton {
+  width: 15%;
+  font-size: 25px;
+  background-color: rgb(31, 161, 133);
+  &:hover {
+    color: $main-color;
+    background-color: $deep-bg;
+  }
+}
