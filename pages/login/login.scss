@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.startPage {
+  background: url(../../assets/wei.jpg);
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  // min-width: 390px;
+  height: 100vh;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  z-index: 50;
+  align-items: center;
+  @include md {
+    background-position: cover;
+  }
+  .startImage {
+    display: flex;
+    flex-direction: column;
+    @include lg {
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      color: $dark-bg;
+      text-shadow: 5px 5px 5px rgb(5, 61, 53);
+      // @include md {
+      //   font-size: 2rem;
+      // }
+    }
+    span {
+      @include md {
+        margin-top: 10px;
+      }
+    }
+  }
+  .startForm {
+    height: 450px;
+    padding: 40px;
+    min-width: 350px;
+    background-color: rgba(255, 255, 255, 0.365);
+    //background: $lin-grad;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgb(5, 61, 53);
+  }
+}
