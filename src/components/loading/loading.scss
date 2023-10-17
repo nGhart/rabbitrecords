@@ -1,0 +1,13 @@
+.loadingSection {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  div {
+    .spinner {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.signupFromContainer {
+  background-color: $main-color;
+  padding: 30px;
+  width: 350px;
+  .signForm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .signupButton {
+    width: 100%;
+  }
+}
